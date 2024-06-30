@@ -1,0 +1,184 @@
+.main {
+    width: 100%;
+    min-height: 345px;
+    text-align: center;
+    position: relative;
+    cursor: pointer
+}
+
+.service {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0 12px 0;
+    margin-top: 6vw;
+    bottom: 0%;
+    z-index: 1;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform .8s
+}
+
+.service-logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: #fff
+}
+
+.first-logo {
+    border: 18px solid #FFD580
+}
+
+.second-logo {
+    border: 18px solid #ADD8E6
+}
+
+.third-logo {
+    border: 18px solid #FF7F7F
+}
+
+.best-hack-logo {
+    border: 18px solid #b4b9ff
+}
+
+.service-logo img {
+    width: 50px;
+    margin-top: 20px;
+    transition: transform 1s
+}
+
+.service h4 {
+    height: 35px;
+    width: 100%;
+    background: #fff;
+    margin: 50px auto;
+    position: relative
+}
+
+.service h4 {
+    font-size: 2.6rem;
+    font-family: 'Montserrat', sans-serif
+}
+
+.shadowOne,
+.hack-shadowOne {
+    height: 180px;
+    width: 80%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform .8s
+}
+
+.modal-title {
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif
+}
+
+.shadowTwo,
+.hack-shadowTwo {
+    height: 200px;
+    width: 64%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2
+}
+
+.hack-shadowOne,
+.hack-shadowTwo {
+    bottom: 85px;
+}
+
+.cash-prize {
+    font-size: 34px
+}
+
+.main:hover .service {
+    transform: translateY(-40px)
+}
+
+.main:hover .shadowOne,
+.main:hover .hack-shadowOne {
+    transform: translateY(-20px)
+}
+
+.main:hover img {
+    transform: rotate(360deg)
+}
+
+.mainMLH {
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+    position: relative;
+    cursor: pointer
+}
+
+.mainMLH:hover .service {
+    transform: translateY(-40px)
+}
+
+.mainMLH:hover .shadowOneMLH {
+    transform: translateY(-20px)
+}
+
+.mainMLH:hover img {
+    transform: rotate(360deg)
+}
+
+.shadowOneMLH {
+    height: 200px;
+    width: 80%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: -8px;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform .8s
+}
+
+.shadowTwoMLH {
+    height: 100px;
+    width: 64%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: -8px;
+    left: 18%;
+    z-index: -2
+}
+
+.mainMLH .service {
+    margin-top: 13rem !important;
+}
+
+.mlh-logo {
+    border: 18px solid #e3bc9a
+}
+
+.service-logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: #fff
+}
+
+.service h5 {
+    background: #fff;
+    font-size: 2.6rem;
+    margin: 20px 35px 40px 35px;
+    font-family: Montserrat, sans-serif;
+    line-height: 2.8rem;
+    position: relative
+}
