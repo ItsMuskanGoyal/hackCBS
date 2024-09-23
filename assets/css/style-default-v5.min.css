@@ -164,7 +164,7 @@ table th {
 a.active,
 a:focus,
 a:hover {
-  color: #90C4F2;
+  color: #45B6BC;
   -moz-transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
@@ -9983,7 +9983,7 @@ button:hover:after {
   transition: 0.4s ease;
 }
 .lgx-gallery-single figure figcaption {
-  background: #90C4F2;
+  background: #45B6BC;
   
   position: absolute;
   left: 5%;
@@ -10046,15 +10046,15 @@ button:hover:after {
   color: rgb(255, 215, 23);
 }
 .lgx-photo-gallery-black {
-  background: url(../img/hackathon.jpg) bottom center no-repeat fixed;
+  background: url(../img/new_assets/bg2.png) bottom center no-repeat fixed;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
 }
-.lgx-photo-gallery-black .lgx-inner {
-  background: rgba(31, 38, 49, 0.85);
-}
+/* .lgx-photo-gallery-black .lgx-inner {
+  background: rgba(188, 190, 193, 0.85);
+} */
 .lgx-gallery-area .lgx-gallery-single {
   width: 100%;
 }
@@ -11917,7 +11917,8 @@ blockquote.lgx-testi-single:before {
 }
 
 .section_title .title-dark{
-  color: #90C4F2;
+  color: #45B6BC;
+  
 }
 
 
@@ -11930,11 +11931,11 @@ blockquote.lgx-testi-single:before {
 }
 
 .section_title .title:before{
-  border-top: solid 3px #90C4F2;
+  border-top: solid 3px #45B6BC;
 }
 
 .section_title .title-dark:before{
-  border-top: solid 3px #90C4F2;
+  border-top: solid 3px #45B6BC;
 }
 
 .icon_box_one,
