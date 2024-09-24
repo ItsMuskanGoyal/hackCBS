@@ -1,1 +1,2 @@
-hackCBS 7.0 minor changes
+All major Changes done
+New theme going to be live soon
