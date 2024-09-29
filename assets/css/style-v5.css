@@ -2943,10 +2943,10 @@ lord-icon {
     }
 }
 
-.new-carousel-primary:hover,
+/* .new-carousel-primary:hover,
 .new-carousel-secondary:hover {
     animation-play-state: paused;
-}
+} */
 
 @media screen and (max-width: 768px) {
     .new-carousel-primary img, .new-carousel-secondary img {
