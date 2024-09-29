@@ -60,18 +60,11 @@ html {
 
 .banner-parallax {
     background-image: url("../img/bg/bg1.jpg");
-    /* Set the background to cover the entire screen */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
-
-    /* Set the section to occupy the entire viewport height */
     height: 100vh;
-
-    /* Center content vertically and horizontally */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -750,12 +743,9 @@ a {
 }
 
 .glimpses_container {
-    display: grid;
+    display: flex;
     /* grid-auto-flow: dense; */
-    grid-template-rows: auto;
-    grid-template-columns: repeat(5, 1fr);
     align-items: center;
-    grid-column-gap: 2rem;
 }
 
 @media screen and (max-width: 550px) {
@@ -835,10 +825,10 @@ a {
     background: url('../img/new_assets/bg2.png') no-repeat center center;
 }
 .left-container {
-    flex-basis: 60%;
+    
     /* Takes 60% of available space */
-    max-width: 60%;
-    padding: 20px;
+    width: 60%;
+    padding: 10px;
     box-sizing: border-box;
     /* Include padding in the width calculation */
     word-wrap: break-word;
@@ -848,7 +838,7 @@ a {
 .right-container {
     flex-basis: 40%;
     /* Takes 40% of available space */
-    max-width: 40%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2774,8 +2764,6 @@ lord-icon {
     visibility: visible;
 }
 
-
-/***  scroll to top button  *****/
 #btn-back-to-top {
     position: fixed;
     bottom: 20px;
@@ -2827,7 +2815,6 @@ lord-icon {
     overflow: hidden;
 }
 
-/* Black overlay for the video */
 .banner-parallax::before {
     content: '';
     position: absolute;
@@ -2836,11 +2823,9 @@ lord-icon {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* 50% opacity */
     z-index: 0;
 }
 
-/* Video styling */
 .banner-parallax video {
     position: absolute;
     top: 50%;
@@ -2854,7 +2839,6 @@ lord-icon {
     object-fit: cover;
 }
 
-/* Notify me */
 .form-container {
     background-color: #ffffff;
     border-radius: 10px;
@@ -2893,50 +2877,106 @@ lord-icon {
 #about-div {
     display: flex;
     justify-content: space-between;
-    /* Space between items */
+
     align-items: center;
 }
 
-.scroll-container {
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+#glimpses-new {
+   background: url('../img/new_assets/bg2.png') no-repeat center center;
+    padding: 50px 0;
 }
 
-.carousel-primary,
-.carousel-secondary {
-    top: 30%; /* Adjusted the top positioning */
-    width: 100%; /* Ensure the width spans the container */
-    position: absolute;
+.glimpses-new-container {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.new-scroll-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.new-carousel-primary, .new-carousel-secondary {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     white-space: nowrap;
 }
 
-.carousel-primary img,
-.carousel-secondary img {
-    max-width: 25%; /* Ensure the images fit within the container */
-    margin-left: 20px;
-    border-radius: 14px;
-    object-fit: cover; /* Ensure the images fit well */
+.new-carousel-primary img, .new-carousel-secondary img {
+    width: 200px;
+    height: 150px;
+    margin: 0 10px;
+    border: 2px solid white;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0; 
+}
+.new-carousel-primary {
+    animation: scroll-left 15s linear infinite;
 }
 
-.carousel-primary {
-    display: flex;
-    justify-content: space-around;
-    animation: scroll-horizontal 20s linear infinite;
+.new-carousel-secondary {
+    animation: scroll-right 15s linear infinite;
 }
 
-.carousel-secondary {
-    display: flex;
-    justify-content: space-around;
-    animation: scroll-horizontal 20s linear infinite;
-    animation-delay: 10s;
-}
-
-@keyframes scroll-horizontal {
+@keyframes scroll-left {
     0% {
-        left: 100%;
+        transform: translateX(100%);
     }
     100% {
-        left: -100%;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.new-carousel-primary:hover,
+.new-carousel-secondary:hover {
+    animation-play-state: paused;
+}
+
+@media screen and (max-width: 768px) {
+    .new-carousel-primary img, .new-carousel-secondary img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .new-carousel-primary {
+        animation: scroll-left 12s linear infinite;
+    }
+
+    .new-carousel-secondary {
+        animation: scroll-right 12s linear infinite;
+        animation-delay: 6s;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .new-carousel-primary img, .new-carousel-secondary img {
+        width: 100px;
+        height: 75px;
+        margin: 0 5px;
+    }
+
+    .new-carousel-primary {
+        animation: scroll-left 10s linear infinite;
+    }
+
+    .new-carousel-secondary {
+        animation: scroll-right 10s linear infinite;
+        animation-delay: 5s;
     }
 }
