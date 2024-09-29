@@ -1133,7 +1133,6 @@ a {
 
 .themes-bg {
     background-color: #040709;
-    /* background-color: blue; */
     background-size: cover;
 
 }
@@ -1747,13 +1746,20 @@ div.lgx-single-registration.recommended {
 }
 
 #prizes {
-    background-color: rgb(240, 245, 250);
+    /* background-color: rgb(240, 245, 250); */
+    background-color: #040709;
 }
 
 .prize-container {
     padding: 50px 25px 100px 25px;
 }
 
+/* .prizes-bg-cover {
+    background-image: url('assets/img/new_assets/prizes_bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} */
 
 
 .prize-heading,
