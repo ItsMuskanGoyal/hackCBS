@@ -1,5 +1,3 @@
-
-
         // function increment() {
         //     var randomValueAdd = Math.floor(Math.random() * 26);
         //     var randomValueRemove = Math.floor(Math.random() * 23);

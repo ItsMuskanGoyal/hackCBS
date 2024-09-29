@@ -1,2 +1,3 @@
-All major Changes done
-New theme going to be live soon
+Full structure of Website: Done
+CSS and JS Debugging: Done
+New theme: In Progress
