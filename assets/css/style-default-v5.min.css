@@ -11883,11 +11883,14 @@ blockquote.lgx-testi-single:before {
     height: 180px;
   }
 }
+
+/* This PT and PB manage the padding of all sections */
+
 .pt100 {
-  padding-top: 80px !important;
+  padding-top: 20px !important;
 }
 .pb100 {
-  padding-bottom: 80px !important;
+  padding-bottom: 20px !important;
 }
 .pb_profile {
   padding-bottom: 5px;
