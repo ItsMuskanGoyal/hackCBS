@@ -1,3 +1,1 @@
-Full structure of Website: Done
-CSS and JS Debugging: Done
-New theme: In Progress
+HackCBS 7.0 Website LIVE
