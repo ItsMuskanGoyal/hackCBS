@@ -496,3 +496,138 @@ Vaibhav Srivastava
 
 https://www.linkedin.com/in/saksham-duhan-48a536229/
 Saksham Duhan
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="pb100 pt100" id=about>
+            <div class="about-container">
+                <!-- <div class="left-container"> -->
+                    <div class=container>
+                        <div class=section_title>
+                            <h3 class="title-dark" data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top-bottom"> About the event</h3>
+                        </div>
+                        <div id="about-div">
+                            <div class="row">
+                                <div class="col-12" data-aos="fade-up" data-aos-duration="1000"
+                                    data-aos-anchor-placement="top-bottom">
+                                    <p>Embarking on the next chapter of an exhilarating legacy, we present to you
+                                        <b><i>hackCBS
+                                                7.0!</i></b>
+                                        It is the ultimate blend of coders, innovators, designers and tech-connoisseurs
+                                        which is a
+                                        celebration of expertise and creativity that promises an unparalleled
+                                        experience.
+                                        <br />
+                                        hackCBS 7.0 provides an excellent opportunity for hackathon enthusiasts to learn
+                                        new skills
+                                        and
+                                        network with industry leaders & experts. Get ready to embark on an exciting
+                                        journey,
+                                        overcoming
+                                        challenges using innovative solutions and much more!
+
+                                    </p>
+                                    <br />
+                                </div>
+                                <div class="col-10" data-aos="fade-up" data-aos-duration="1000"
+                                    data-aos-anchor-placement="top-bottom">
+
+                                    <p>
+                                        <!-- With over <i><b>8600+</b></i> registrations across <i><b>20 countries</b></i> over the
+                            years, -->
+                                        The event is a <b><i>mega-fest of hackers</i></b> racing against time for the
+                                        intensive
+                                        development of a hack. But this time it's going to be different, in this
+                                        edition of
+                                        hackCBS,
+                                        we are about to embark on an extraordinary journey, where grandeur meets
+                                        innovation, and the
+                                        boundaries of what is possible in hacking will be redefined.
+
+                                    </p>
+                                    <br />
+                                </div>
+                                <div class="col-md-6">
+                                    <p data-aos="fade-right" data-aos-duration="1000"
+                                        data-aos-anchor-placement="bottom-bottom">
+                                        <b>Venue</b> <br>[In-Person] - Shaheed Sukhdev College of Business Studies
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p data-aos="fade-right" data-aos-duration="1000"
+                                        data-aos-anchor-placement="bottom-bottom"
+                                        style="padding-left: 0px; @media (min-width: 1000px) { padding-left: 20px; }">
+                                        <b>Dates</b> <br> 9-10 November 2024
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="container stat_icons">
+                        <div class="row clr-dark">
+                            <div class="col-lg-2 col-xs-4 stats">
+                                <!-- <div class="stat-icons"><i class="fas fa-user" aria-hidden="true"></i></div> <br> -->
+                                <lord-icon part="box" class="regs" src="https://cdn.lordicon.com/dxjqoygy.json"
+                                    trigger="loop" colors="primary:#45b6b6,secondary:#45b6b6"></lord-icon>
+                                <div class="counting" data-count="15873">0</div>
+                                <h5 class="clr-dark">Registrations</h5>
+                            </div>
+
+                            <div class="col-lg-2 col-xs-4 stats">
+                                <div class="stat">
+                                    <div class="stat-image">
+                                        <lord-icon part="box" class="hacker"
+                                            src="https://cdn.lordicon.com/nobciafz.json" trigger="loop"
+                                            colors="primary:#45b6b6,secondary:#45b6b6"></lord-icon>
+                                        <div class="counting" data-count="4479">0</div>
+                                    </div>
+                                </div>
+                                <h5 class="clr-dark">Attendees</h5>
+                            </div>
+
+                            <div class="col-lg-2 col-xs-4 stats">
+                                <lord-icon part="box" class="college" src="https://cdn.lordicon.com/jjjmlddk.json"
+                                    trigger="loop" colors="primary:#45b6b6,secondary:#45b6b6"></lord-icon>
+                                <div class="counting" data-count="718">0</div>
+                                <h5 class="clr-dark">Colleges</h5>
+                            </div>
+
+                            <div class="col-lg-2 col-xs-4 stats">
+                                <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop"
+                                    colors="primary:#45b6b6,secondary:#45b6b6"></lord-icon>
+                                <div class="counting" data-count="440">0</div>
+                                <h5 class="clr-dark">Cities</h5>
+                            </div>
+
+                            <div class="col-lg-2 col-xs-4 stats">
+                                <lord-icon part="box" class="country" src="https://cdn.lordicon.com/gqzfzudq.json"
+                                    trigger="loop" colors="primary:#45b6b6,secondary:#45b6b6"></lord-icon>
+                                <div class="counting" data-count="25">0</div>
+                                <h5 class="clr-dark">Countries</h5>
+                            </div>
+
+                            <div class="col-lg-2 col-xs-4 stats">
+                                <lord-icon src="https://cdn.lordicon.com/tdxypxgp.json" trigger="loop"
+                                    colors="primary:#45b6b6,secondary:#45b6b6"></lord-icon>
+                                <div class="counting" data-count="24500">0</div>
+                                <h5 class="clr-dark">YouTube Views</h5>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="right-container">
+                    <img src="assets/img/new_assets/ship.png" alt="Event Image">
+                </div> -->
+            </div>
+        </section>

@@ -823,6 +823,31 @@ a {
     /* Add background image on top of the color */
 }
 
+.medium-ship {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.stat_icons .counting {
+    font-size: 24px;
+    font-weight: bold;
+}
+.stats h5 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+@media (max-width: 992px) {
+    .medium-ship {
+        max-width: 80%;
+    }
+}
+
+/* #about-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
 
 .glimpses-container
 {
@@ -1210,7 +1235,7 @@ div.lgx-single-registration.recommended {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
-    padding: 1rem 3rem 1rem 1rem;
+    padding: 1rem 3rem 2rem 1rem;
     color: #45b6b6;
     font-size: 1.8rem;
     font-weight: 400;
@@ -2942,12 +2967,97 @@ lord-icon {
     background-color: #0056b3;
 }
 
-#about-div {
-    display: flex;
-    justify-content: space-between;
 
+.new-scroll-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
+
+.new-carousel-primary, .new-carousel-secondary {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.new-carousel-primary img, .new-carousel-secondary img {
+    width: 200px;
+    height: 150px;
+    margin: 0 10px;
+    border: 2px solid #D0A022;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+}
+
+/* Smooth infinite scroll */
+.new-carousel-primary {
+    animation: scroll-left 15s linear infinite;
+}
+
+.new-carousel-secondary {
+    animation: scroll-right 15s linear infinite;
+}
+
+/* Keyframes for left scroll */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Keyframes for right scroll */
+@keyframes scroll-right {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .new-carousel-primary img, .new-carousel-secondary img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .new-carousel-primary {
+        animation: scroll-left 20s linear infinite;
+    }
+
+    .new-carousel-secondary {
+        animation: scroll-right 20s linear infinite;
+        animation-delay: 6s;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .new-carousel-primary img, .new-carousel-secondary img {
+        width: 100px;
+        height: 75px;
+        margin: 0 5px;
+    }
+
+    .new-carousel-primary {
+        animation: scroll-left 15s linear infinite;
+    }
+
+    .new-carousel-secondary {
+        animation: scroll-right 15s linear infinite;
+        animation-delay: 5s;
+    }
+}
+
+
+
+/* 
 
 #glimpses-new {
    background: url('../img/new_assets/bg2.png') no-repeat center center;
@@ -2980,7 +3090,7 @@ lord-icon {
     width: 200px;
     height: 150px;
     margin: 0 10px;
-    border: 2px solid white;
+    border: 2px solid #D0A0;
     object-fit: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 0; 
@@ -3011,10 +3121,6 @@ lord-icon {
     }
 }
 
-/* .new-carousel-primary:hover,
-.new-carousel-secondary:hover {
-    animation-play-state: paused;
-} */
 
 @media screen and (max-width: 768px) {
     .new-carousel-primary img, .new-carousel-secondary img {
@@ -3047,4 +3153,4 @@ lord-icon {
         animation: scroll-right 10s linear infinite;
         animation-delay: 5s;
     }
-}
+} */
