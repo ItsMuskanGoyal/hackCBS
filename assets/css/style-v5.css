@@ -169,7 +169,7 @@ html {
     gap: 4rem;
     align-items: center;
     margin-top: 7rem;
-    margin-bottom: 8rem;
+    margin-bottom: 15rem;
 }
 
 
@@ -373,6 +373,7 @@ section#counter-stats {
 
 
 .container {
+
     color: #DFEAF0;
 }
 
@@ -829,10 +830,10 @@ a {
     background: url('../img/new_assets/bg2.png') no-repeat center center;
 }
 .left-container {
-    
+    flex-basis: 60%;
     /* Takes 60% of available space */
     width: 60%;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
     /* Include padding in the width calculation */
     word-wrap: break-word;
@@ -842,7 +843,7 @@ a {
 .right-container {
     flex-basis: 40%;
     /* Takes 40% of available space */
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -856,7 +857,7 @@ a {
     height: auto;
     object-fit: contain;
     /* Prevents image from overflowing the container */
-    margin-left: 20%;
+    margin-bottom: 20%;
 }
 
 /* Hide right-container on mobile */
@@ -2943,9 +2944,9 @@ lord-icon {
 }
 
 #about-div {
+    
     display: flex;
     justify-content: space-between;
-
     align-items: center;
 }
 
