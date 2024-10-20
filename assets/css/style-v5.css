@@ -2970,52 +2970,58 @@ lord-icon {
     overflow: hidden;
 }
 
-.new-carousel-primary, .new-carousel-secondary {
-    width: 100%;
+.new-carousel-primary{
+    display: inline-block;
+    justify-content: left;
+    white-space: nowrap;
+}
+.new-carousel-secondary {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     white-space: nowrap;
 }
 
 .new-carousel-primary img, .new-carousel-secondary img {
-    width: 200px;
-    height: 150px;
+    flex-shrink: 0;
+    width: 300px;  /* Adjust this width to make sure it matches your container size */
+    height: 180px;
     margin: 0 10px;
     border: 2px solid white;
     object-fit: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 0; 
 }
 .new-carousel-primary {
-    animation: scroll-left 15s linear infinite;
+    animation: scroll-left 15s linear infinite;  /* Slower speed for primary carousel */
 }
 
 .new-carousel-secondary {
-    animation: scroll-right 15s linear infinite;
+    animation: scroll-right 15s linear infinite; /* Opposite direction for secondary carousel */
 }
 
+
 @keyframes scroll-left {
-    0% {
-        transform: translateX(100%);
+    from{
+        transform: translateX(0);
     }
-    100% {
+    to{
         transform: translateX(-100%);
     }
 }
 
 @keyframes scroll-right {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(0);  /* Start at the beginning */
     }
     100% {
-        transform: translateX(100%);
+        transform: translateX(100%); /* Same idea for right scrolling */
     }
 }
 
-/* .new-carousel-primary:hover,
+
+.new-carousel-primary:hover,
 .new-carousel-secondary:hover {
     animation-play-state: paused;
-} */
+}
 
 @media screen and (max-width: 768px) {
     .new-carousel-primary img, .new-carousel-secondary img {
@@ -3029,7 +3035,6 @@ lord-icon {
 
     .new-carousel-secondary {
         animation: scroll-right 12s linear infinite;
-        animation-delay: 6s;
     }
 }
 
@@ -3037,7 +3042,6 @@ lord-icon {
     .new-carousel-primary img, .new-carousel-secondary img {
         width: 100px;
         height: 75px;
-        margin: 0 5px;
     }
 
     .new-carousel-primary {
@@ -3046,6 +3050,5 @@ lord-icon {
 
     .new-carousel-secondary {
         animation: scroll-right 10s linear infinite;
-        animation-delay: 5s;
     }
 }
