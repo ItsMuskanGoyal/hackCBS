@@ -3056,7 +3056,7 @@ lord-icon {
 
 
 
-/* 
+
 
 #glimpses-new {
    background: url('../img/new_assets/bg2.png') no-repeat center center;
@@ -3091,7 +3091,8 @@ lord-icon {
 
 .new-carousel-primary img, .new-carousel-secondary img {
     flex-shrink: 0;
-    width: 300px;  /* Adjust this width to make sure it matches your container size */
+    width: 300px;  /* Adjust this width to make sure it matches your container size 
+.new-carousel-primary img, .new-carousel-secondary img {
     height: 180px;
     margin: 0 10px;
     border: 2px solid #D0A0;
@@ -3126,10 +3127,10 @@ lord-icon {
 }
 
 
-.new-carousel-primary:hover,
+/* .new-carousel-primary:hover,
 .new-carousel-secondary:hover {
     animation-play-state: paused;
-}
+} */
 
 @media screen and (max-width: 768px) {
     .new-carousel-primary img, .new-carousel-secondary img {
@@ -3159,4 +3160,4 @@ lord-icon {
     .new-carousel-secondary {
         animation: scroll-right 10s linear infinite;
     }
-}
+} 
