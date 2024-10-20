@@ -169,7 +169,7 @@ html {
     gap: 4rem;
     align-items: center;
     margin-top: 7rem;
-    margin-bottom: 8rem;
+    margin-bottom: 15rem;
 }
 
 
@@ -373,6 +373,7 @@ section#counter-stats {
 
 
 .container {
+
     color: #DFEAF0;
 }
 
@@ -854,10 +855,10 @@ a {
     background: url('../img/new_assets/bg2.png') no-repeat center center;
 }
 .left-container {
-    
+    flex-basis: 60%;
     /* Takes 60% of available space */
     width: 60%;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
     /* Include padding in the width calculation */
     word-wrap: break-word;
@@ -867,7 +868,7 @@ a {
 .right-container {
     flex-basis: 40%;
     /* Takes 40% of available space */
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -881,7 +882,7 @@ a {
     height: auto;
     object-fit: contain;
     /* Prevents image from overflowing the container */
-    margin-left: 20%;
+    margin-bottom: 20%;
 }
 
 /* Hide right-container on mobile */
@@ -2967,12 +2968,10 @@ lord-icon {
     background-color: #0056b3;
 }
 
-
-.new-scroll-container {
+#about-div {
+    
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
 }
@@ -3079,48 +3078,58 @@ lord-icon {
     overflow: hidden;
 }
 
-.new-carousel-primary, .new-carousel-secondary {
-    width: 100%;
+.new-carousel-primary{
+    display: inline-block;
+    justify-content: left;
+    white-space: nowrap;
+}
+.new-carousel-secondary {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     white-space: nowrap;
 }
 
 .new-carousel-primary img, .new-carousel-secondary img {
-    width: 200px;
-    height: 150px;
+    flex-shrink: 0;
+    width: 300px;  /* Adjust this width to make sure it matches your container size */
+    height: 180px;
     margin: 0 10px;
     border: 2px solid #D0A0;
     object-fit: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 0; 
 }
 .new-carousel-primary {
-    animation: scroll-left 15s linear infinite;
+    animation: scroll-left 15s linear infinite;  /* Slower speed for primary carousel */
 }
 
 .new-carousel-secondary {
-    animation: scroll-right 15s linear infinite;
+    animation: scroll-right 15s linear infinite; /* Opposite direction for secondary carousel */
 }
 
+
 @keyframes scroll-left {
-    0% {
-        transform: translateX(100%);
+    from{
+        transform: translateX(0);
     }
-    100% {
+    to{
         transform: translateX(-100%);
     }
 }
 
 @keyframes scroll-right {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(0);  /* Start at the beginning */
     }
     100% {
-        transform: translateX(100%);
+        transform: translateX(100%); /* Same idea for right scrolling */
     }
 }
 
+
+.new-carousel-primary:hover,
+.new-carousel-secondary:hover {
+    animation-play-state: paused;
+}
 
 @media screen and (max-width: 768px) {
     .new-carousel-primary img, .new-carousel-secondary img {
@@ -3134,7 +3143,6 @@ lord-icon {
 
     .new-carousel-secondary {
         animation: scroll-right 12s linear infinite;
-        animation-delay: 6s;
     }
 }
 
@@ -3142,7 +3150,6 @@ lord-icon {
     .new-carousel-primary img, .new-carousel-secondary img {
         width: 100px;
         height: 75px;
-        margin: 0 5px;
     }
 
     .new-carousel-primary {
@@ -3151,6 +3158,5 @@ lord-icon {
 
     .new-carousel-secondary {
         animation: scroll-right 10s linear infinite;
-        animation-delay: 5s;
     }
-} */
+}
