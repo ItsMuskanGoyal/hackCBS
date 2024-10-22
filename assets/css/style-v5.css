@@ -472,13 +472,7 @@ a {
     color: #DFEAF0;
 }
 
-.glimpse-title {
-    /* font-family: Montserrat, sans-serif; */
-    line-height: 1.2;
-    text-transform: uppercase;
-    padding: 10px 0;
-    font-size: 36px;
-}
+
 
 .sponsor_space {
     margin-bottom: 50px;
@@ -614,6 +608,15 @@ a {
 
 /** Glimpses **/
 
+/** Glimpses **/
+
+.glimpse-title {
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-size: 36px;
+}
+
 .previous_ed {
     margin-top: 1rem;
 }
@@ -623,11 +626,6 @@ a {
     justify-content: center;
     align-items: center;
 }
-
-/* .glimpses_of_events_heading h2{
-    font-weight: 700;
-    margin-bottom: 1rem;
-} */
 
 .glimpses_of_events .addBack {
     transform: rotateY(180deg);
@@ -651,37 +649,18 @@ a {
     gap: 1rem;
 }
 
-/* .row3_last-card {
-    margin-top: 3rem !important;
-} */
-
 .col-lg-2 {
     padding-left: 0.30rem;
-
     margin-top: 0.10rem;
     margin-bottom: 0.10rem;
 }
 
-/* .glimps_RowOnesecondCard,
-.glimps_RowOneFourthCard {
-    margin-bottom: 3rem !important;
-} */
-
-/* .glimps_RowTwosecondCard,
-.glimps_RowTwoFourthCard {
-    position: absolute;
-    margin-top: 90px;
-    padding-right: 0.60rem !important;
-    padding-left: 0.60rem !important;
-} */
-
-
 .glimpse_flip-card {
     background-color: transparent;
-    /* width: 100%; */
-    height: 240px;
+    height: auto; /* Remove fixed height to maintain responsiveness */
     perspective: 1000px;
-    border: 0.2rem outset pink
+    border: 0.2rem solid goldenrod; /* Golden border */
+    overflow: hidden; /* Ensure the card content doesn't overflow */
 }
 
 .glimpse_flip-card-inner {
@@ -689,10 +668,8 @@ a {
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: 0.2s ease,
-        padding 0.8s linear;
+    transition: transform 0.5s ease;
     transform-style: preserve-3d;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
 }
 
 .glimpse_flip-card-front,
@@ -701,76 +678,64 @@ a {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
 }
 
-.glimpse_flip-card-front img {
-    width: 100%;
-    height: 100%;
-    /* border-radius: 18px; */
-    object-fit: cover;
-}
-
+.glimpse_flip-card-front img,
 .glimpse_flip-card-back img {
     width: 100%;
     height: 100%;
-    border-radius: 18px;
     object-fit: cover;
 }
 
 .glimpse_flip-card-back {
-
     transform: rotateY(180deg);
 }
 
 .glimpse_flip-card {
-    width: 18rem;
-    /* Adjust card width as needed */
-    height: 20rem;
-    /* Adjust card height as needed */
-    /* margin: 5px; */
-    perspective: 1000px;
-}
-
-.glimpse_flip-card-inner {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-}
-
-.glimpse_flip-card:hover .glimpse_flip-card-inner {
-    transform: rotateY(180deg);
+    width: 20rem; /* Maintain rectangular width */
+    height: 16rem; /* Adjust height to make it slightly smaller than width */
 }
 
 .glimpses_container {
     display: flex;
-    /* grid-auto-flow: dense; */
+    flex-wrap: wrap; /* Allow items to wrap if there's not enough space */
+    gap: 1rem; /* Add gap between cards */
+    justify-content: center; /* Center align */
     align-items: center;
+    overflow-y: scroll; /* Enable vertical scrolling */
 }
 
+.glimpses_container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.glimpses_container {
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.glimpses_container:hover .glimpse_flip-card {
+    animation: scrollCards 10s linear infinite; /* Infinite scrolling */
+}
+
+@keyframes scrollCards {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* Responsive styling */
 @media screen and (max-width: 550px) {
     .glimpses_container {
-        /* width: 100%; */
-        grid-template-rows: auto;
         grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-        grid-column-gap: 1rem;
-    }
-
-    .row2,
-    .row4 {
-        display: none;
     }
 
     .glimpse_flip-card {
         height: 13rem;
         width: 14rem;
     }
-
-    /* .main{
-    width: 31rem;
-   } */
 }
 
 @media screen and (min-width: 550px) and (max-width: 768px) {
@@ -787,48 +752,105 @@ a {
 @media screen and (min-width: 768px) and (max-width: 990px) {
     .glimpses_container {
         grid-template-columns: repeat(5, 1fr);
-
     }
 
     .glimpse_flip-card {
         height: 18rem;
         width: 15rem;
     }
-
-
 }
 
-/* .lgx-photo-gallery-black .lgx-inner {
-    background: rgba(78, 98, 129, 0.93);
-} */
-/* #glimpses .pb100 {
-    padding-left: 0;
-    padding-right: 0;
-} */
-.section_title h5 {
-    color: white;
-}
 
-.text-left {
-    text-align: left;
-}
 
-.about-container {
+
+
+
+
+
+/* .about-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 #about {
-    background: url('../img/new_assets/bg1.png') no-repeat center center;
-    /* Add background image on top of the color */
+    background: url('assets/img/New_bg/AboutOverlay.png') no-repeat center center;
+
 }
 
-.medium-ship {
+#about-div {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+} */
+
+/* Main About Section Container */
+.about-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+    justify-content: space-between; /* Creates space between child elements */
+    align-items: flex-start; /* Aligns items to the top of the container */
+    gap: 20px; /* Adds space between the flex items */
+    padding: 40px 20px; /* Adds padding inside the container */
+    max-width: 1200px; /* Restricts the container's width */
+    margin: 0 auto; /* Centers the container on the page */
+}
+
+/* About Section */
+#about {
+    background: url('assets/img/New_bg/AboutOverlay.png') no-repeat center center;
+    background-size: cover; /* Ensures the background image covers the whole section */
+    position: relative;
+    padding: 80px 0; /* Adds vertical padding for the section */
+    color: #fff; /* Text color */
+    text-align: left; /* Centers text content */
+    z-index: 1; /* Ensures it's above background content */
+}
+
+/* Flex Container for Content in About Section */
+#about-div {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers content vertically within the container */
+    align-items: left; /* Centers content horizontally */
+    overflow: hidden; /* Hides overflowed content */
+    max-width: 1000px; /* Restricts content width */
+    margin: 0 auto; /* Centers the content */
+}
+
+/* Paragraph and Text Styling */
+.about-container p {
+    margin: 10px 0; /* Adds margin between paragraphs */
+    font-size: 1.1rem; /* Slightly increases font size */
+    line-height: 1.6; /* Improves readability */
+    color: #333; /* Default paragraph color */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        justify-content: left; /* Centers items when screen width is smaller */
+        gap: 15px; /* Reduces gap on smaller screens */
+    }
+
+    #about-div {
+        padding: 20px; /* Adds padding for smaller screens */
+    }
+
+    .about-container p {
+        font-size: 1rem; /* Slightly smaller font size for mobile */
+        line-height: 1.5; /* Adjusts line height for mobile */
+    }
+}
+
+
+/* .medium-ship {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-}
+} */
 .stat_icons .counting {
     font-size: 24px;
     font-weight: bold;
@@ -837,11 +859,26 @@ a {
     margin-top: 10px;
     font-size: 18px;
 }
+/* @media (max-width: 992px) {
+    .medium-ship {
+        max-width: 100%;
+    }
+} */
+
+.medium-ship {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px; /* Adjust this value to move the ship downwards */
+}
+
 @media (max-width: 992px) {
     .medium-ship {
-        max-width: 80%;
+        max-width: 100%;
+        margin-top: 15px; /* You can adjust this value for smaller screens */
     }
 }
+
 
 /* #about-div {
     display: flex;
@@ -850,10 +887,7 @@ a {
 } */
 
 
-.glimpses-container
-{
-    background: url('../img/new_assets/bg2.png') no-repeat center center;
-}
+
 .left-container {
     flex-basis: 60%;
     /* Takes 60% of available space */
@@ -1028,8 +1062,7 @@ a {
 
 
 .silver-sponsor img {
-    width: 70%;
-
+    width: 50%;
 }
 
 .general-sponsor img {
@@ -1487,7 +1520,7 @@ div.lgx-single-registration.recommended {
     }
 
     .silver-sponsor img {
-        width: 70%;
+        width: 60%;
     }
 
     .general-sponsor img {
@@ -2347,6 +2380,11 @@ lord-icon {
     color: rgb(252, 219, 253);
 }
 
+
+
+
+
+
 /* ************ Media Queries ************** */
 
 @media screen and (max-width:1227px) {
@@ -2968,13 +3006,6 @@ lord-icon {
     background-color: #0056b3;
 }
 
-#about-div {
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-}
 
 .new-carousel-primary, .new-carousel-secondary {
     display: flex;
