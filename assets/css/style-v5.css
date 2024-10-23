@@ -3123,16 +3123,7 @@ lord-icon {
 
 .new-carousel-primary img, .new-carousel-secondary img {
     flex-shrink: 0;
-    width: 300px;  /* Adjust this width to make sure it matches your container size 
-.new-carousel-primary img, .new-carousel-secondary img {
-    height: 180px;
-    margin: 0 10px;
-    border: 2px solid #D0A0;
-    object-fit: cover;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-.new-carousel-primary {
-    animation: scroll-left 15s linear infinite;  /* Slower speed for primary carousel */
+    width: 300px;  
 }
 
 .new-carousel-secondary {
@@ -3159,10 +3150,10 @@ lord-icon {
 }
 
 
-/* .new-carousel-primary:hover,
+.new-carousel-primary:hover,
 .new-carousel-secondary:hover {
     animation-play-state: paused;
-} */
+}
 
 @media screen and (max-width: 768px) {
     .new-carousel-primary img, .new-carousel-secondary img {
