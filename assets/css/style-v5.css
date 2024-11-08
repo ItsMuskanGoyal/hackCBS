@@ -1048,6 +1048,20 @@ a {
     cursor: grab;
 }
 
+
+.compat-logo {
+    background-color: #fff;
+    margin: 15px 10px;
+    padding: 20px 5px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05), 0 1px 5px 0 rgba(0, 0, 0, 0.05);
+    cursor: grab;
+}
 .sponsors-logo:hover {
     box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
 }
@@ -3195,3 +3209,7 @@ lord-icon {
         animation: scroll-right 10s linear infinite;
     }
 } 
+
+.com-pat{
+    margin-left: 120px;
+}
