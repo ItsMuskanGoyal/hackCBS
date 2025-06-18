@@ -169,7 +169,7 @@ html {
     display: flex;
     gap: 4rem;
     align-items: center;
-    margin-top: 7rem;
+    margin-top: 4rem;
     margin-bottom: 15rem;
 }
 
@@ -189,7 +189,7 @@ html {
 }
 
 .banner-video-overlay img {
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 10px;
 }
 
@@ -2944,7 +2944,7 @@ lord-icon {
 
 
 .hackcbs_landing {
-    width: 72%;
+    width: 60%;
 }
 
 @media screen and (max-width: 684px) {
@@ -3212,4 +3212,18 @@ lord-icon {
 
 .com-pat{
     margin-left: 120px;
+}
+
+.coming-soon{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.landing-date{
+    text-align: center;
+    /* background-color: black; */
+    font-size: 30px;
+    font-style: underline;
+    margin-top: 35px;
 }
