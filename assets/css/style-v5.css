@@ -2222,7 +2222,7 @@ h4.hack-prize-heading {
 
 @media screen and (max-width: 924px) {
     .schedule {
-        display: block;
+        display: none;
     }
 
     .schedule-laptop {
